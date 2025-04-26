@@ -58,7 +58,7 @@ else:
     ]
 
     # Lặp qua danh sách tọa độ cắt
-    for i, (x1, y1, x2, y2) in enumerate(crop_coords):
+    for i, (x1, y1, x2, y2) in enumerate(crop_coords):      
         draw_rectangle(image, x1, y1, x2, y2)  # Vẽ hình chữ nhật
         text, cropped_image = extract_text_from_image(image, x1, y1, x2, y2)
         #cv2.imshow(f'Cropped {i+1}', cropped_image)
